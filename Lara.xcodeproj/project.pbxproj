@@ -10,9 +10,13 @@
 		8326CC352B01356000821FF6 /* Nunito-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8326CC342B01356000821FF6 /* Nunito-VariableFont_wght.ttf */; };
 		8326CC3C2B0138C500821FF6 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326CC3B2B0138C500821FF6 /* TopBar.swift */; };
 		8326CC3E2B01396F00821FF6 /* NextAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326CC3D2B01396F00821FF6 /* NextAppointment.swift */; };
-		8326CC3F2B014B6E00821FF6 /* poppins_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8326CC382B0135E000821FF6 /* poppins_bold.ttf */; };
-		8326CC402B014B7100821FF6 /* poppins_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8326CC392B01361500821FF6 /* poppins_regular.ttf */; };
 		8326CC412B014B7300821FF6 /* nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8326CC372B01359200821FF6 /* nunito.ttf */; };
+		8338F3ED2B027E0C00B93F02 /* sb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8338F3EC2B027E0C00B93F02 /* sb.ttf */; };
+		8338F3F12B0285CB00B93F02 /* poppins_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8338F3EF2B0285CA00B93F02 /* poppins_bold.ttf */; };
+		8338F3F22B0285CB00B93F02 /* poppins_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8338F3F02B0285CA00B93F02 /* poppins_regular.ttf */; };
+		8338F3F42B02865600B93F02 /* FontsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338F3F32B02865500B93F02 /* FontsExtensions.swift */; };
+		83622D352B0371220077518C /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83622D342B0371220077518C /* Search.swift */; };
+		83622D372B0374E60077518C /* IssueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83622D362B0374E60077518C /* IssueList.swift */; };
 		83CA1CD82B01025900080316 /* LaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA1CD72B01025900080316 /* LaraApp.swift */; };
 		83CA1CDA2B01025900080316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA1CD92B01025900080316 /* ContentView.swift */; };
 		83CA1CDC2B01025C00080316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CA1CDB2B01025C00080316 /* Assets.xcassets */; };
@@ -22,10 +26,15 @@
 /* Begin PBXFileReference section */
 		8326CC342B01356000821FF6 /* Nunito-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-VariableFont_wght.ttf"; path = "../../../Downloads/Nunito/Nunito-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		8326CC372B01359200821FF6 /* nunito.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nunito.ttf; sourceTree = "<group>"; };
-		8326CC382B0135E000821FF6 /* poppins_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_bold.ttf; path = ../../../../Downloads/Poppins/poppins_bold.ttf; sourceTree = "<group>"; };
-		8326CC392B01361500821FF6 /* poppins_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_regular.ttf; path = ../../../../Downloads/Poppins/poppins_regular.ttf; sourceTree = "<group>"; };
 		8326CC3B2B0138C500821FF6 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		8326CC3D2B01396F00821FF6 /* NextAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAppointment.swift; sourceTree = "<group>"; };
+		8338F3EC2B027E0C00B93F02 /* sb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sb.ttf; sourceTree = "<group>"; };
+		8338F3EF2B0285CA00B93F02 /* poppins_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_bold.ttf; path = ../../poppins_bold.ttf; sourceTree = "<group>"; };
+		8338F3F02B0285CA00B93F02 /* poppins_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_regular.ttf; path = ../../poppins_regular.ttf; sourceTree = "<group>"; };
+		8338F3F32B02865500B93F02 /* FontsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsExtensions.swift; sourceTree = "<group>"; };
+		83622D342B0371220077518C /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		83622D362B0374E60077518C /* IssueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueList.swift; sourceTree = "<group>"; };
+		8376D5EA2B02768800C55B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83CA1CD42B01025900080316 /* Lara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CA1CD72B01025900080316 /* LaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaraApp.swift; sourceTree = "<group>"; };
 		83CA1CD92B01025900080316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,8 +56,9 @@
 		8326CC362B01357400821FF6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8326CC392B01361500821FF6 /* poppins_regular.ttf */,
-				8326CC382B0135E000821FF6 /* poppins_bold.ttf */,
+				8338F3F02B0285CA00B93F02 /* poppins_regular.ttf */,
+				8338F3EF2B0285CA00B93F02 /* poppins_bold.ttf */,
+				8338F3EC2B027E0C00B93F02 /* sb.ttf */,
 				8326CC372B01359200821FF6 /* nunito.ttf */,
 			);
 			path = Fonts;
@@ -59,6 +69,8 @@
 			children = (
 				8326CC3B2B0138C500821FF6 /* TopBar.swift */,
 				8326CC3D2B01396F00821FF6 /* NextAppointment.swift */,
+				83622D342B0371220077518C /* Search.swift */,
+				83622D362B0374E60077518C /* IssueList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -70,6 +82,7 @@
 				83CA1CD52B01025900080316 /* Products */,
 			);
 			sourceTree = "<group>";
+			tabWidth = 6;
 		};
 		83CA1CD52B01025900080316 /* Products */ = {
 			isa = PBXGroup;
@@ -82,6 +95,7 @@
 		83CA1CD62B01025900080316 /* Lara */ = {
 			isa = PBXGroup;
 			children = (
+				8376D5EA2B02768800C55B61 /* Info.plist */,
 				8326CC3A2B0138A000821FF6 /* Components */,
 				8326CC362B01357400821FF6 /* Fonts */,
 				83CA1CD72B01025900080316 /* LaraApp.swift */,
@@ -89,6 +103,7 @@
 				8326CC342B01356000821FF6 /* Nunito-VariableFont_wght.ttf */,
 				83CA1CDB2B01025C00080316 /* Assets.xcassets */,
 				83CA1CDD2B01025C00080316 /* Preview Content */,
+				8338F3F32B02865500B93F02 /* FontsExtensions.swift */,
 			);
 			path = Lara;
 			sourceTree = "<group>";
@@ -159,12 +174,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8326CC402B014B7100821FF6 /* poppins_regular.ttf in Resources */,
+				8338F3ED2B027E0C00B93F02 /* sb.ttf in Resources */,
 				83CA1CDF2B01025C00080316 /* Preview Assets.xcassets in Resources */,
-				8326CC3F2B014B6E00821FF6 /* poppins_bold.ttf in Resources */,
 				8326CC352B01356000821FF6 /* Nunito-VariableFont_wght.ttf in Resources */,
 				83CA1CDC2B01025C00080316 /* Assets.xcassets in Resources */,
 				8326CC412B014B7300821FF6 /* nunito.ttf in Resources */,
+				8338F3F22B0285CB00B93F02 /* poppins_regular.ttf in Resources */,
+				8338F3F12B0285CB00B93F02 /* poppins_bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,9 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8338F3F42B02865600B93F02 /* FontsExtensions.swift in Sources */,
 				83CA1CDA2B01025900080316 /* ContentView.swift in Sources */,
 				8326CC3C2B0138C500821FF6 /* TopBar.swift in Sources */,
+				83622D352B0371220077518C /* Search.swift in Sources */,
 				8326CC3E2B01396F00821FF6 /* NextAppointment.swift in Sources */,
+				83622D372B0374E60077518C /* IssueList.swift in Sources */,
 				83CA1CD82B01025900080316 /* LaraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Lara/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lara/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +362,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Lara/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lara/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
