@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8326CC352B01356000821FF6 /* Nunito-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8326CC342B01356000821FF6 /* Nunito-VariableFont_wght.ttf */; };
 		8326CC3C2B0138C500821FF6 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326CC3B2B0138C500821FF6 /* TopBar.swift */; };
 		8326CC3E2B01396F00821FF6 /* NextAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326CC3D2B01396F00821FF6 /* NextAppointment.swift */; };
 		8326CC412B014B7300821FF6 /* nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8326CC372B01359200821FF6 /* nunito.ttf */; };
-		8338F3ED2B027E0C00B93F02 /* sb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8338F3EC2B027E0C00B93F02 /* sb.ttf */; };
-		8338F3F12B0285CB00B93F02 /* poppins_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8338F3EF2B0285CA00B93F02 /* poppins_bold.ttf */; };
-		8338F3F22B0285CB00B93F02 /* poppins_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8338F3F02B0285CA00B93F02 /* poppins_regular.ttf */; };
 		8338F3F42B02865600B93F02 /* FontsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338F3F32B02865500B93F02 /* FontsExtensions.swift */; };
+		8356935D2B038E16009D98B4 /* poppins_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8356935B2B038E16009D98B4 /* poppins_regular.ttf */; };
+		8356935E2B038E16009D98B4 /* poppins_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8356935C2B038E16009D98B4 /* poppins_bold.ttf */; };
 		83622D352B0371220077518C /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83622D342B0371220077518C /* Search.swift */; };
 		83622D372B0374E60077518C /* IssueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83622D362B0374E60077518C /* IssueList.swift */; };
 		83CA1CD82B01025900080316 /* LaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA1CD72B01025900080316 /* LaraApp.swift */; };
@@ -24,14 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8326CC342B01356000821FF6 /* Nunito-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Nunito-VariableFont_wght.ttf"; path = "../../../Downloads/Nunito/Nunito-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		8326CC372B01359200821FF6 /* nunito.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nunito.ttf; sourceTree = "<group>"; };
 		8326CC3B2B0138C500821FF6 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		8326CC3D2B01396F00821FF6 /* NextAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAppointment.swift; sourceTree = "<group>"; };
-		8338F3EC2B027E0C00B93F02 /* sb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sb.ttf; sourceTree = "<group>"; };
-		8338F3EF2B0285CA00B93F02 /* poppins_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_bold.ttf; path = ../../poppins_bold.ttf; sourceTree = "<group>"; };
-		8338F3F02B0285CA00B93F02 /* poppins_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_regular.ttf; path = ../../poppins_regular.ttf; sourceTree = "<group>"; };
 		8338F3F32B02865500B93F02 /* FontsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsExtensions.swift; sourceTree = "<group>"; };
+		8356935B2B038E16009D98B4 /* poppins_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_regular.ttf; path = ../../../../Downloads/Poppins/poppins_regular.ttf; sourceTree = "<group>"; };
+		8356935C2B038E16009D98B4 /* poppins_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_bold.ttf; path = ../../../../Downloads/Poppins/poppins_bold.ttf; sourceTree = "<group>"; };
 		83622D342B0371220077518C /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		83622D362B0374E60077518C /* IssueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueList.swift; sourceTree = "<group>"; };
 		8376D5EA2B02768800C55B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -56,9 +52,8 @@
 		8326CC362B01357400821FF6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8338F3F02B0285CA00B93F02 /* poppins_regular.ttf */,
-				8338F3EF2B0285CA00B93F02 /* poppins_bold.ttf */,
-				8338F3EC2B027E0C00B93F02 /* sb.ttf */,
+				8356935C2B038E16009D98B4 /* poppins_bold.ttf */,
+				8356935B2B038E16009D98B4 /* poppins_regular.ttf */,
 				8326CC372B01359200821FF6 /* nunito.ttf */,
 			);
 			path = Fonts;
@@ -100,7 +95,6 @@
 				8326CC362B01357400821FF6 /* Fonts */,
 				83CA1CD72B01025900080316 /* LaraApp.swift */,
 				83CA1CD92B01025900080316 /* ContentView.swift */,
-				8326CC342B01356000821FF6 /* Nunito-VariableFont_wght.ttf */,
 				83CA1CDB2B01025C00080316 /* Assets.xcassets */,
 				83CA1CDD2B01025C00080316 /* Preview Content */,
 				8338F3F32B02865500B93F02 /* FontsExtensions.swift */,
@@ -174,13 +168,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8338F3ED2B027E0C00B93F02 /* sb.ttf in Resources */,
 				83CA1CDF2B01025C00080316 /* Preview Assets.xcassets in Resources */,
-				8326CC352B01356000821FF6 /* Nunito-VariableFont_wght.ttf in Resources */,
+				8356935D2B038E16009D98B4 /* poppins_regular.ttf in Resources */,
 				83CA1CDC2B01025C00080316 /* Assets.xcassets in Resources */,
+				8356935E2B038E16009D98B4 /* poppins_bold.ttf in Resources */,
 				8326CC412B014B7300821FF6 /* nunito.ttf in Resources */,
-				8338F3F22B0285CB00B93F02 /* poppins_regular.ttf in Resources */,
-				8338F3F12B0285CB00B93F02 /* poppins_bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
