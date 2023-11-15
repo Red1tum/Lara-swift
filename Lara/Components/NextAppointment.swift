@@ -47,10 +47,10 @@ struct NextAppointment: View {
                         Text(info.doctorName)
                             .poppinsBold(size: 16)
                             .bold()
-                            .foregroundColor(.white)
+                            .foregroundColor(Colors.primary)
                         Text(info.doctorPosition)
                             .poppinsRegular(size: 14)
-                            .foregroundStyle(Color(red: 0.8, green: 0.88, blue: 1))
+                            .foregroundStyle(Colors.grayishWhite)
                     }
                     .padding(0)
                     Spacer()
@@ -59,6 +59,7 @@ struct NextAppointment: View {
                     // for use to aim for button
                     Button(action: {}) {
                         Image("arrow_right")
+                            .iconFrame()
                     }
                 }
                 Divider()
@@ -67,16 +68,18 @@ struct NextAppointment: View {
                     Label {
                         Text(info.date)
                             .poppinsRegular(size: 12)
-                            .foregroundColor(.white)
+                            .foregroundColor(Colors.primary)
                     } icon: {
                         Image("calendar")
+                            .iconFrame()
                     }
                     Label {
                         Text(info.time)
                             .poppinsRegular(size: 12)
-                            .foregroundColor(.white)
+                            .foregroundColor(Colors.primary)
                     } icon: {
                         Image("clock")
+                            .iconFrame()
                     }
                 }
                 .padding(0)
@@ -84,7 +87,7 @@ struct NextAppointment: View {
                 
             }
             .padding(20)
-            .frame(width: 327, alignment: .top)
+            .frame(width: Sizes.elementWidth, alignment: .top)
             .background(Color(red: 0.28, green: 0.58, blue: 1))
             .cornerRadius(12)
         }

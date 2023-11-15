@@ -51,7 +51,7 @@ struct NearDoctorCard: View {
                     Image(nearDoctor.imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 48, height: 48, alignment: .top)
+                        .avatarFrame(alignment: .top)
                         .background(
                             Circle()
                                 .foregroundColor(.white)
@@ -61,19 +61,19 @@ struct NearDoctorCard: View {
                         Text(nearDoctor.name)
                             .poppinsBold(size: 16)
                             .bold()
-                            .foregroundColor(Color(red: 0.05, green: 0.11, blue : 0.2))
+                            .foregroundColor(Colors.midnight)
                         Text(nearDoctor.position)
                             .poppinsRegular(size: 14)
-                            .foregroundStyle(Color(red: 0.53, green: 0.59, blue: 0.73))
+                            .foregroundColor(Colors.blackishGray)
                     }
                     .padding(0)
                     Spacer()
                     Image("location")
                     Text("\(String(format: "%.1f", nearDoctor.distanceToPatient)) KM")
                         .poppinsRegular(size: 14)
-                        .foregroundColor(Color(red: 0.53, green: 0.59, blue: 0.73))
+                        .foregroundColor(Colors.blackishGray)
                 }
-                .frame(width: 295, alignment: .center)
+                .frame(width: Sizes.nearDoctorWidth, alignment: .center)
                 .padding(0)
                 Divider()
                 HStack(alignment: .top, spacing: 24) {
@@ -84,7 +84,7 @@ struct NearDoctorCard: View {
                         Image("clock")
                             .renderingMode(.template)
                     }
-                    .foregroundColor(Color(red: 1, green: 0.69, blue: 0.32))
+                    .foregroundColor(Colors.yellow)
                     Label {
                         Text("Open at \(nearDoctor.openAt)")
                             .poppinsRegular(size: 12)
@@ -95,9 +95,9 @@ struct NearDoctorCard: View {
                     .foregroundColor(Color(red: 0.28, green: 0.58, blue: 1))
                 }
                 .padding(0)
-                .frame(width: 295, alignment: .topLeading)
+                .frame(width: Sizes.nearDoctorWidth, alignment: .topLeading)
             }
-            .frame(width: 327, alignment: .top)
+            .frame(width: Sizes.elementWidth, alignment: .top)
             .padding(.horizontal, 16)
             .padding(.vertical, 20)
             .background(.white)
@@ -115,7 +115,7 @@ struct NearDoctorList: View {
             Text("Near Doctor")
                 .poppinsRegular(size: 16)
                 .fontWeight(.semibold)
-                .foregroundColor(Color(red: 0.05, green: 0.11, blue: 0.2))
+                .foregroundColor(Colors.midnight)
                 .padding(.horizontal, 16)
             ForEach(nearDoctors) {nearDoctor in
                 NearDoctorCard(nearDoctor: nearDoctor)

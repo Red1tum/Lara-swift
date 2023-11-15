@@ -26,13 +26,13 @@ struct IssueView: View {
                 
             }) {
                 Image(issue.imageName)
-                    .frame(width: 72, height: 72)
-                    .background(Color(red: 0.98, green: 0.98, blue: 0.98))
+                    .issueFrame()
+                    .background(Colors.whitishGray)
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             }
             Text(issue.issue)
                 .poppinsRegular(size: 15)
-                .foregroundColor(Color(red: 0.53, green: 0.59, blue: 0.73))
+                .foregroundColor(Colors.blackishGray)
         }
     }
 }
