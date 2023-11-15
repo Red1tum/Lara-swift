@@ -26,4 +26,8 @@ extension View {
         return self.font(.custom("Poppins-Regular", size: size))
     }
     
+    func nunito(size: CGFloat) -> some View {
+        return self.font(.custom("Nunito", size: size))
+    }
+    
 }

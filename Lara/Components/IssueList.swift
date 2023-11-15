@@ -20,14 +20,13 @@ class Issue: ObservableObject, Identifiable {
 struct IssueView: View {
     @StateObject var issue: Issue
     
-    
     var body: some View {
         VStack(alignment: .center, spacing: 8) {
             Button(action: {
                 
             }) {
                 Image(issue.imageName)
-                    .frame(width: 82, height: 82)
+                    .frame(width: 72, height: 72)
                     .background(Color(red: 0.98, green: 0.98, blue: 0.98))
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             }
@@ -46,6 +45,8 @@ struct IssueList: View {
                 IssueView(issue: issue)
             }
         }
+        .padding(0)
+        .frame(width: 327)
     }
 }
 

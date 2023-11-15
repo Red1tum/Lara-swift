@@ -11,8 +11,12 @@
 		8326CC3E2B01396F00821FF6 /* NextAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326CC3D2B01396F00821FF6 /* NextAppointment.swift */; };
 		8326CC412B014B7300821FF6 /* nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8326CC372B01359200821FF6 /* nunito.ttf */; };
 		8338F3F42B02865600B93F02 /* FontsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8338F3F32B02865500B93F02 /* FontsExtensions.swift */; };
+		833D73502B05221A00212FF9 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D734F2B05221A00212FF9 /* Sizes.swift */; };
+		833D73522B05254700212FF9 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D73512B05254700212FF9 /* Colors.swift */; };
 		8356935D2B038E16009D98B4 /* poppins_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8356935B2B038E16009D98B4 /* poppins_regular.ttf */; };
 		8356935E2B038E16009D98B4 /* poppins_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8356935C2B038E16009D98B4 /* poppins_bold.ttf */; };
+		835693602B03905D009D98B4 /* NearDoctorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356935F2B03905D009D98B4 /* NearDoctorList.swift */; };
+		835693622B03E023009D98B4 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835693612B03E023009D98B4 /* BottomBar.swift */; };
 		83622D352B0371220077518C /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83622D342B0371220077518C /* Search.swift */; };
 		83622D372B0374E60077518C /* IssueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83622D362B0374E60077518C /* IssueList.swift */; };
 		83CA1CD82B01025900080316 /* LaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA1CD72B01025900080316 /* LaraApp.swift */; };
@@ -26,8 +30,12 @@
 		8326CC3B2B0138C500821FF6 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		8326CC3D2B01396F00821FF6 /* NextAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAppointment.swift; sourceTree = "<group>"; };
 		8338F3F32B02865500B93F02 /* FontsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsExtensions.swift; sourceTree = "<group>"; };
+		833D734F2B05221A00212FF9 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		833D73512B05254700212FF9 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8356935B2B038E16009D98B4 /* poppins_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_regular.ttf; path = ../../../../Downloads/Poppins/poppins_regular.ttf; sourceTree = "<group>"; };
 		8356935C2B038E16009D98B4 /* poppins_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = poppins_bold.ttf; path = ../../../../Downloads/Poppins/poppins_bold.ttf; sourceTree = "<group>"; };
+		8356935F2B03905D009D98B4 /* NearDoctorList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearDoctorList.swift; sourceTree = "<group>"; };
+		835693612B03E023009D98B4 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		83622D342B0371220077518C /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		83622D362B0374E60077518C /* IssueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueList.swift; sourceTree = "<group>"; };
 		8376D5EA2B02768800C55B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +74,8 @@
 				8326CC3D2B01396F00821FF6 /* NextAppointment.swift */,
 				83622D342B0371220077518C /* Search.swift */,
 				83622D362B0374E60077518C /* IssueList.swift */,
+				8356935F2B03905D009D98B4 /* NearDoctorList.swift */,
+				835693612B03E023009D98B4 /* BottomBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -98,6 +108,8 @@
 				83CA1CDB2B01025C00080316 /* Assets.xcassets */,
 				83CA1CDD2B01025C00080316 /* Preview Content */,
 				8338F3F32B02865500B93F02 /* FontsExtensions.swift */,
+				833D734F2B05221A00212FF9 /* Sizes.swift */,
+				833D73512B05254700212FF9 /* Colors.swift */,
 			);
 			path = Lara;
 			sourceTree = "<group>";
@@ -184,9 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8338F3F42B02865600B93F02 /* FontsExtensions.swift in Sources */,
+				833D73522B05254700212FF9 /* Colors.swift in Sources */,
 				83CA1CDA2B01025900080316 /* ContentView.swift in Sources */,
+				835693622B03E023009D98B4 /* BottomBar.swift in Sources */,
 				8326CC3C2B0138C500821FF6 /* TopBar.swift in Sources */,
 				83622D352B0371220077518C /* Search.swift in Sources */,
+				835693602B03905D009D98B4 /* NearDoctorList.swift in Sources */,
+				833D73502B05221A00212FF9 /* Sizes.swift in Sources */,
 				8326CC3E2B01396F00821FF6 /* NextAppointment.swift in Sources */,
 				83622D372B0374E60077518C /* IssueList.swift in Sources */,
 				83CA1CD82B01025900080316 /* LaraApp.swift in Sources */,
