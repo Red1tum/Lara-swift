@@ -16,6 +16,9 @@ struct Colors {
     static let midnight = Color(red: 0.05, green: 0.11, blue: 0.2)
     static let yellow = Color(red: 1, green: 0.69, blue: 0.32)
     static let blue = Color(red: 0.28, green: 0.58, blue: 1)
+    static let shadow = Color(red: 0.35, green: 0.46, blue: 0.65).opacity(0.04)
+    static let transparentLightBlue = Color(red: 0.39, green: 0.71, blue: 1).opacity(0.1)
+    static let lightBlue = Color(red: 0.39, green: 0.71, blue: 1) 
     
 }
 

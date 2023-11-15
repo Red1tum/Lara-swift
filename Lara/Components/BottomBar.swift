@@ -52,10 +52,10 @@ struct BottomBar: View {
             ForEach(tabs) {tab in
                 let shouldShow = selectedTab == tab.name
                 TabItem(selectedTab: $selectedTab, shouldShowName: shouldShow, tabInfo: tab)
-                    .background(shouldShow ? Color(red: 0.39, green: 0.71, blue: 1).opacity(0.1) : .white)
-                    .foregroundColor(shouldShow ? Color(red: 0.39, green: 0.71, blue: 1) : Color(red: 0.53, green: 0.59, blue: 0.73))
-                    .frame(minWidth: 70)
-                    .cornerRadius(12)
+                    .background(shouldShow ? Colors.transparentLightBlue : .white)
+                    .foregroundColor(shouldShow ? Colors.lightBlue : Colors.blackishGray)
+                    .frame(minWidth: Sizes.tabItemMinWidth)
+                    .cornerRadius(Sizes.cornerRadius)
                     .onTapGesture {
                         withAnimation(.easeIn(duration: 0.1)) {
                             selectedTab = tab.name
@@ -66,7 +66,7 @@ struct BottomBar: View {
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
         .frame(alignment: .center)
-        .background(.white)
+        .background(Colors.primary)
     }
 }
 

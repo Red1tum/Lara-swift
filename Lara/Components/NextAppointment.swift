@@ -7,21 +7,6 @@
 
 import SwiftUI
 
-class NextAppointmentInfo: ObservableObject {
-    @Published var imageName: String
-    @Published var doctorName: String
-    @Published var doctorPosition: String
-    @Published var date: String
-    @Published var time: String
-    
-    init(imageName: String, doctorName: String, doctorPosition: String, date: String, time: String) {
-        self.imageName = imageName
-        self.doctorName = doctorName
-        self.doctorPosition = doctorPosition
-        self.date = date
-        self.time = time
-    }
-}
 
 struct NextAppointment: View {
     @State var info: NextAppointmentInfo

@@ -7,15 +7,7 @@
 
 import SwiftUI
 
-class Issue: ObservableObject, Identifiable {
-    @Published var imageName: String
-    @Published var issue: String
-    
-    init(imageName: String, issue: String) {
-        self.imageName = imageName
-        self.issue = issue
-    }
-}
+
 
 struct IssueView: View {
     @StateObject var issue: Issue

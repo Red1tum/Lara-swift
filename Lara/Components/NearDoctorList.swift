@@ -7,39 +7,7 @@
 
 import SwiftUI
 
-class NearDoctorInfo: ObservableObject, Identifiable {
-    @Published var name: String
-    @Published var position: String
-    @Published var distanceToPatient: Float
-    
-    // It would be more correct to add these to different
-    // class but then the initialization will be more tedious
-    @Published var rating: Float
-    @Published var qtyOfReviews: Int
-    
-    @Published var openAt: String
-    
-    @Published var imageName: String
-    
-    init(name: String, position: String, distanceToPatient: Float, rating: Float, qtyOfReviews: Int, openAt: String, imageName: String) {
-        self.name = name
-        self.position = position
-        self.distanceToPatient = distanceToPatient
-        self.rating = rating
-        self.qtyOfReviews = qtyOfReviews
-        self.openAt = openAt
-        self.imageName = imageName
-    }
-}
 
-class NearDoctors: ObservableObject, Identifiable {
-    @Published var doctors = [NearDoctorInfo]()
-    
-    init(doctors: [NearDoctorInfo]) {
-        self.doctors = doctors
-    }
-    
-}
 
 struct NearDoctorCard: View {
     @StateObject var nearDoctor: NearDoctorInfo
@@ -92,7 +60,7 @@ struct NearDoctorCard: View {
                         Image("calendar")
                             .renderingMode(.template)
                     }
-                    .foregroundColor(Color(red: 0.28, green: 0.58, blue: 1))
+                    .foregroundColor(Colors.blue)
                 }
                 .padding(0)
                 .frame(width: Sizes.nearDoctorWidth, alignment: .topLeading)
@@ -101,8 +69,8 @@ struct NearDoctorCard: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 20)
             .background(.white)
-            .cornerRadius(12)
-            .shadow(color: Color(red: 0.35, green: 0.46, blue: 0.65).opacity(0.04), radius: 10, x: 2, y: 12)
+            .cornerRadius(Sizes.cornerRadius)
+            .shadow(color: Colors.shadow, radius: 10, x: 2, y: 12)
         }
     }
 }

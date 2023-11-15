@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct TopBar: View {
+    @State var userName: String
+    
     var body: some View {
         HStack() {
             VStack(alignment: .leading) {
                 Text("Hello,")
-                    .font(Font.custom("poppins_regular", size: 16))
-                    .foregroundColor(Color(red: 0.53, green: 0.59, blue: 0.73))
-                Text("Hi James")
-                    .font(Font.custom("popping_bold", size: 20).weight(.bold))
-                    .foregroundColor(Color(red: 0.05, green: 0.11, blue: 0.2))
+                    .poppinsRegular(size: 16)
+                    .foregroundColor(Colors.blackishGray)
+                Text("Hi \(userName)")
+                    .poppinsBold(size: 20)
+                    .bold()
+                    .foregroundColor(Colors.midnight)
             }
             Spacer()
             Image("avatar")
         }
         .padding(0)
-        .frame(width: 327, alignment: .center)
+        .frame(width: Sizes.elementWidth, alignment: .center)
     }
 }
 
 #Preview {
-    TopBar()
+    TopBar(userName: "James")
 }

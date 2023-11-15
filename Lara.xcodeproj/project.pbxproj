@@ -19,6 +19,8 @@
 		835693622B03E023009D98B4 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835693612B03E023009D98B4 /* BottomBar.swift */; };
 		83622D352B0371220077518C /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83622D342B0371220077518C /* Search.swift */; };
 		83622D372B0374E60077518C /* IssueList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83622D362B0374E60077518C /* IssueList.swift */; };
+		837867372B053741009234CB /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837867362B053741009234CB /* Types.swift */; };
+		8378673A2B053821009234CB /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837867392B053821009234CB /* HomeScreen.swift */; };
 		83CA1CD82B01025900080316 /* LaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA1CD72B01025900080316 /* LaraApp.swift */; };
 		83CA1CDA2B01025900080316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA1CD92B01025900080316 /* ContentView.swift */; };
 		83CA1CDC2B01025C00080316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CA1CDB2B01025C00080316 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		83622D342B0371220077518C /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		83622D362B0374E60077518C /* IssueList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueList.swift; sourceTree = "<group>"; };
 		8376D5EA2B02768800C55B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		837867362B053741009234CB /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		837867392B053821009234CB /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		83CA1CD42B01025900080316 /* Lara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CA1CD72B01025900080316 /* LaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaraApp.swift; sourceTree = "<group>"; };
 		83CA1CD92B01025900080316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,32 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		837867342B0536C1009234CB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				833D73512B05254700212FF9 /* Colors.swift */,
+				833D734F2B05221A00212FF9 /* Sizes.swift */,
+				8338F3F32B02865500B93F02 /* FontsExtensions.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		837867352B0536D9009234CB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				837867362B053741009234CB /* Types.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		837867382B053806009234CB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				837867392B053821009234CB /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		83CA1CCB2B01025900080316 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +130,9 @@
 		83CA1CD62B01025900080316 /* Lara */ = {
 			isa = PBXGroup;
 			children = (
+				837867382B053806009234CB /* Screens */,
+				837867352B0536D9009234CB /* Data */,
+				837867342B0536C1009234CB /* Theme */,
 				8376D5EA2B02768800C55B61 /* Info.plist */,
 				8326CC3A2B0138A000821FF6 /* Components */,
 				8326CC362B01357400821FF6 /* Fonts */,
@@ -107,9 +140,6 @@
 				83CA1CD92B01025900080316 /* ContentView.swift */,
 				83CA1CDB2B01025C00080316 /* Assets.xcassets */,
 				83CA1CDD2B01025C00080316 /* Preview Content */,
-				8338F3F32B02865500B93F02 /* FontsExtensions.swift */,
-				833D734F2B05221A00212FF9 /* Sizes.swift */,
-				833D73512B05254700212FF9 /* Colors.swift */,
 			);
 			path = Lara;
 			sourceTree = "<group>";
@@ -198,8 +228,10 @@
 				8338F3F42B02865600B93F02 /* FontsExtensions.swift in Sources */,
 				833D73522B05254700212FF9 /* Colors.swift in Sources */,
 				83CA1CDA2B01025900080316 /* ContentView.swift in Sources */,
+				837867372B053741009234CB /* Types.swift in Sources */,
 				835693622B03E023009D98B4 /* BottomBar.swift in Sources */,
 				8326CC3C2B0138C500821FF6 /* TopBar.swift in Sources */,
+				8378673A2B053821009234CB /* HomeScreen.swift in Sources */,
 				83622D352B0371220077518C /* Search.swift in Sources */,
 				835693602B03905D009D98B4 /* NearDoctorList.swift in Sources */,
 				833D73502B05221A00212FF9 /* Sizes.swift in Sources */,
