@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct NearDoctorCard: View {
     @StateObject var nearDoctor: NearDoctorInfo
     
@@ -22,10 +20,10 @@ struct NearDoctorCard: View {
                         .avatarFrame(alignment: .top)
                         .background(
                             Circle()
-                                .foregroundColor(.white)
+                                .foregroundColor(Colors.primary)
                         )
                         .clipShape(Circle())
-                    VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: 4) {
                         Text(nearDoctor.name)
                             .poppinsBold(size: 16)
                             .bold()
@@ -36,7 +34,7 @@ struct NearDoctorCard: View {
                     }
                     .padding(0)
                     Spacer()
-                    Image("location")
+                    Image(Icons.location)
                     Text("\(String(format: "%.1f", nearDoctor.distanceToPatient)) KM")
                         .poppinsRegular(size: 14)
                         .foregroundColor(Colors.blackishGray)
@@ -49,16 +47,20 @@ struct NearDoctorCard: View {
                         Text("\(String(format: "%.1f", nearDoctor.rating)) (\(nearDoctor.qtyOfReviews) reviews)")
                             .poppinsRegular(size: 12)
                     } icon: {
-                        Image("clock")
+                        Image(Icons.clock)
+                            .resizable()
                             .renderingMode(.template)
+                            .mediumIconFrame()
                     }
                     .foregroundColor(Colors.yellow)
                     Label {
                         Text("Open at \(nearDoctor.openAt)")
                             .poppinsRegular(size: 12)
                     } icon: {
-                        Image("calendar")
+                        Image(Icons.clock)
+                            .resizable()
                             .renderingMode(.template)
+                            .mediumIconFrame()
                     }
                     .foregroundColor(Colors.blue)
                 }
@@ -68,7 +70,7 @@ struct NearDoctorCard: View {
             .frame(width: Sizes.elementWidth, alignment: .top)
             .padding(.horizontal, 16)
             .padding(.vertical, 20)
-            .background(.white)
+            .background(Colors.primary)
             .cornerRadius(Sizes.cornerRadius)
             .shadow(color: Colors.shadow, radius: 10, x: 2, y: 12)
         }

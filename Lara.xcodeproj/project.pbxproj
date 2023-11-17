@@ -25,6 +25,7 @@
 		83CA1CDA2B01025900080316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA1CD92B01025900080316 /* ContentView.swift */; };
 		83CA1CDC2B01025C00080316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CA1CDB2B01025C00080316 /* Assets.xcassets */; };
 		83CA1CDF2B01025C00080316 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CA1CDE2B01025C00080316 /* Preview Assets.xcassets */; };
+		83F3C0E32B07AB8B0053DB51 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C0E22B07AB8B0053DB51 /* Icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		83CA1CD92B01025900080316 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		83CA1CDB2B01025C00080316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CA1CDE2B01025C00080316 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		83F3C0E22B07AB8B0053DB51 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		8326CC3A2B0138A000821FF6 /* Components */ = {
+		8326CC3A2B0138A000821FF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				8326CC3B2B0138C500821FF6 /* TopBar.swift */,
@@ -81,7 +83,7 @@
 				8356935F2B03905D009D98B4 /* NearDoctorList.swift */,
 				835693612B03E023009D98B4 /* BottomBar.swift */,
 			);
-			path = Components;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		837867342B0536C1009234CB /* Theme */ = {
@@ -90,6 +92,7 @@
 				833D73512B05254700212FF9 /* Colors.swift */,
 				833D734F2B05221A00212FF9 /* Sizes.swift */,
 				8338F3F32B02865500B93F02 /* FontsExtensions.swift */,
+				83F3C0E22B07AB8B0053DB51 /* Icons.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -134,7 +137,7 @@
 				837867352B0536D9009234CB /* Data */,
 				837867342B0536C1009234CB /* Theme */,
 				8376D5EA2B02768800C55B61 /* Info.plist */,
-				8326CC3A2B0138A000821FF6 /* Components */,
+				8326CC3A2B0138A000821FF6 /* Views */,
 				8326CC362B01357400821FF6 /* Fonts */,
 				83CA1CD72B01025900080316 /* LaraApp.swift */,
 				83CA1CD92B01025900080316 /* ContentView.swift */,
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F3C0E32B07AB8B0053DB51 /* Icons.swift in Sources */,
 				8338F3F42B02865600B93F02 /* FontsExtensions.swift in Sources */,
 				833D73522B05254700212FF9 /* Colors.swift in Sources */,
 				83CA1CDA2B01025900080316 /* ContentView.swift in Sources */,

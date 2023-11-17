@@ -7,16 +7,12 @@
 
 import SwiftUI
 
-
-
 struct IssueView: View {
     @StateObject var issue: Issue
     
     var body: some View {
         VStack(alignment: .center, spacing: 8) {
-            Button(action: {
-                
-            }) {
+            Button(action: {}) {
                 Image(issue.imageName)
                     .issueFrame()
                     .background(Colors.whitishGray)
@@ -38,7 +34,7 @@ struct IssueList: View {
             }
         }
         .padding(0)
-        .frame(width: 327)
+        .frame(width: Sizes.elementWidth)
     }
 }
 
@@ -49,10 +45,10 @@ struct IssueList: View {
 
 #Preview {
     let issue: [Issue] = [
-       Issue(imageName: "covid", issue: "Covid 19"),
-       Issue(imageName: "doctor", issue: "Doctor"),
-       Issue(imageName: "medicine", issue: "Medicine"),
-       Issue(imageName: "hospital", issue: "Hospital"),
+        Issue(imageName: Icons.covid, issue: "Covid 19"),
+        Issue(imageName: Icons.doctor, issue: "Doctor"),
+        Issue(imageName: Icons.medicine, issue: "Medicine"),
+        Issue(imageName: Icons.hospital, issue: "Hospital"),
     ]
     
     return IssueList(issues: issue)

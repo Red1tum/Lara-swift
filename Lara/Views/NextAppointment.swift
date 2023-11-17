@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct NextAppointment: View {
     @State var info: NextAppointmentInfo
     
@@ -16,19 +15,17 @@ struct NextAppointment: View {
         // doctor info and next appointment info
         Button(action: {}) {
             VStack(alignment: .center, spacing: 16) {
-                HStack(alignment: .center) {
+                HStack(alignment: .center, spacing: 12) {
                     Image(info.imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .avatarFrame(alignment: .top)
-//                        .frame(width: Sizes.avatarWidth, height: Sizes.avatarHeight, alignment: .top)
-                        .offset(CGSize(width: 0.0, height: 5.0))
                         .background(
                             Circle()
-                                .foregroundColor(.white)
+                                .foregroundColor(Colors.primary)
                         )
                         .clipShape(Circle())
-                    VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: 4) {
                         Text(info.doctorName)
                             .poppinsBold(size: 16)
                             .bold()
@@ -43,38 +40,40 @@ struct NextAppointment: View {
                     // the button is small and therefore it's hard
                     // for use to aim for button
                     Button(action: {}) {
-                        Image("arrow_right")
+                        Image(Icons.arrowRight)
+                            .resizable()
                             .iconFrame()
                     }
                 }
                 Divider()
-                    .background(Color.white)
+                    .background(Colors.primary)
                 HStack(alignment: .top, spacing: 30) {
                     Label {
                         Text(info.date)
                             .poppinsRegular(size: 12)
                             .foregroundColor(Colors.primary)
                     } icon: {
-                        Image("calendar")
-                            .iconFrame()
+                        Image(Icons.calendar)
+                            .resizable()
+                            .smallIconFrame()
                     }
                     Label {
                         Text(info.time)
                             .poppinsRegular(size: 12)
                             .foregroundColor(Colors.primary)
                     } icon: {
-                        Image("clock")
-                            .iconFrame()
+                        Image(Icons.clock)
+                            .resizable()
+                            .smallIconFrame()
                     }
                 }
                 .padding(0)
                 .frame(maxWidth: .infinity, alignment: .topLeading)
-                
             }
             .padding(20)
             .frame(width: Sizes.elementWidth, alignment: .top)
-            .background(Color(red: 0.28, green: 0.58, blue: 1))
-            .cornerRadius(12)
+            .background(Colors.blue)
+            .cornerRadius(Sizes.cornerRadius)
         }
     }
 }
