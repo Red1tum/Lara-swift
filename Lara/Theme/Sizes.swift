@@ -16,11 +16,22 @@ struct Sizes {
 
 extension View {
     func avatarFrame(alignment: Alignment) -> some View {
-        return self.frame(width: 58.0, height: 73, alignment: alignment)
+        return self.frame(width: 48.0, height: 48.0, alignment: alignment)
     }
     
+    
+    // I think there's an issue with design because there shouldn't be
+    // 3 different sizes for icons
     func iconFrame(alignment: Alignment = .center) -> some View {
         return self.frame(width: 24, height: 24, alignment: alignment)
+    }
+    
+    func mediumIconFrame(alignment: Alignment = .center) -> some View {
+        return self.frame(width: 20, height: 20, alignment: alignment)
+    }
+
+    func smallIconFrame(alignment: Alignment = .center) -> some View {
+        return self.frame(width: 16, height: 16, alignment: alignment)
     }
     
     func issueFrame() -> some View {

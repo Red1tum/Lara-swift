@@ -10,6 +10,16 @@ import SwiftUI
 // It'd more correct to place these type in different files
 // but in current scope it makes navigation easier
 
+class User: ObservableObject {
+    @Published var name: String
+    @Published var imageName: String
+    
+    init(name: String, imageName: String) {
+        self.name = name
+        self.imageName = imageName
+    }
+}
+
 class NearDoctorInfo: ObservableObject, Identifiable {
     @Published var name: String
     @Published var position: String

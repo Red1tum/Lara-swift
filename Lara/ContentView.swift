@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State private var SelectedTab: String = "Home"
     
-    
     var body: some View {
         ZStack {
             TabView(selection: $SelectedTab) {
@@ -36,4 +35,9 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+#Preview {
+    ContentView()
+        .environment(\.locale, .init(identifier: "ru"))
 }

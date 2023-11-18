@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TopBar: View {
-    @State var userName: String
+    @StateObject var user: User
     
     var body: some View {
         HStack() {
@@ -16,13 +16,13 @@ struct TopBar: View {
                 Text("Hello,")
                     .poppinsRegular(size: 16)
                     .foregroundColor(Colors.blackishGray)
-                Text("Hi \(userName)")
+                Text("Hi \(user.name)")
                     .poppinsBold(size: 20)
                     .bold()
                     .foregroundColor(Colors.midnight)
             }
             Spacer()
-            Image("avatar")
+            Image(user.imageName)
         }
         .padding(0)
         .frame(width: Sizes.elementWidth, alignment: .center)
@@ -30,5 +30,7 @@ struct TopBar: View {
 }
 
 #Preview {
-    TopBar(userName: "James")
+    let user = User(name: "James", imageName: "avatar")
+    return TopBar(user: user)
+        .environment(\.locale, .init(identifier: "ru"))
 }

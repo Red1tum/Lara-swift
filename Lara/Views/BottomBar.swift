@@ -11,7 +11,14 @@ struct TabInfo: Identifiable {
     // so to do forech I need to create id field???
     let id = UUID()
     let name: String
+    let localizedName: LocalizedStringKey
     let icon: String
+    
+    init(name: String, icon: String) {
+        self.name = name
+        self.localizedName = LocalizedStringKey(name)
+        self.icon = icon
+    }
 }
 
 struct TabItem: View {
@@ -20,16 +27,17 @@ struct TabItem: View {
     // way to pass whether it should show name or not, but I
     // couldn't find a way to do that. So keeping it there
     @Binding var selectedTab: String
-    @State var shouldShowName: Bool
     let tabInfo: TabInfo
     
     var body: some View {
         Label {
-            Text(selectedTab == tabInfo.name ? tabInfo.name : "")
-                    .nunito(size: 12)
+            Text(selectedTab == tabInfo.name ? tabInfo.localizedName : "")
+                    .nunito(size: 14)
             } icon: {
                 Image(tabInfo.icon)
+                    .resizable()
                     .renderingMode(.template)
+                    .iconFrame()
             }
             .padding(12)
             .labelStyle(.titleAndIcon)
@@ -40,19 +48,20 @@ struct TabItem: View {
 struct BottomBar: View {
     @Binding var selectedTab: String
     private let tabs: [TabInfo] = [
-        TabInfo(name: "Home", icon: "home"),
-        TabInfo(name: "Schedule", icon: "calendar"),
-        TabInfo(name: "Chat", icon: "message"),
-        TabInfo(name: "Profile", icon: "profile")
+        TabInfo(name: "Home", icon: Icons.home),
+        TabInfo(name: "Schedule", icon: Icons.calendar),
+        TabInfo(name: "Chat", icon: Icons.chat),
+        TabInfo(name: "Profile", icon: Icons.profile)
     ]
     var body: some View {
         Divider()
-            .foregroundColor(.white)
+            .foregroundColor(Colors.primary)
+            .background(Colors.primary)
         HStack(alignment: .center, spacing: 12) {
             ForEach(tabs) {tab in
                 let shouldShow = selectedTab == tab.name
-                TabItem(selectedTab: $selectedTab, shouldShowName: shouldShow, tabInfo: tab)
-                    .background(shouldShow ? Colors.transparentLightBlue : .white)
+                TabItem(selectedTab: $selectedTab, tabInfo: tab)
+                    .background(shouldShow ? Colors.transparentLightBlue : Colors.primary)
                     .foregroundColor(shouldShow ? Colors.lightBlue : Colors.blackishGray)
                     .frame(minWidth: Sizes.tabItemMinWidth)
                     .cornerRadius(Sizes.cornerRadius)
@@ -63,7 +72,7 @@ struct BottomBar: View {
                     }
             }
         }
-        .padding(.horizontal, 12)
+        .padding([.leading, .trailing], 12)
         .padding(.vertical, 8)
         .frame(alignment: .center)
         .background(Colors.primary)
@@ -72,4 +81,5 @@ struct BottomBar: View {
 
 #Preview {
     BottomBar(selectedTab: .constant("Home"))
+        .environment(\.locale, .init(identifier: "ru"))
 }
