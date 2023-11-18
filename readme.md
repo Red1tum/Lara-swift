@@ -1,4 +1,6 @@
 # 2 lab work / iOS + SwiftUI
+Note: the card in the 'near doctor' section in russian localization is too big and it take 2 lines and I'm think that it's a design flaw.
+
 # Screenshots
 ![first screenshot](assets/first.png)
 ![second screenshot](assets/second.png)

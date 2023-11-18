@@ -11,7 +11,14 @@ struct TabInfo: Identifiable {
     // so to do forech I need to create id field???
     let id = UUID()
     let name: String
+    let localizedName: LocalizedStringKey
     let icon: String
+    
+    init(name: String, icon: String) {
+        self.name = name
+        self.localizedName = LocalizedStringKey(name)
+        self.icon = icon
+    }
 }
 
 struct TabItem: View {
@@ -24,7 +31,7 @@ struct TabItem: View {
     
     var body: some View {
         Label {
-            Text(selectedTab == tabInfo.name ? tabInfo.name : "")
+            Text(selectedTab == tabInfo.name ? tabInfo.localizedName : "")
                     .nunito(size: 14)
             } icon: {
                 Image(tabInfo.icon)
@@ -74,4 +81,5 @@ struct BottomBar: View {
 
 #Preview {
     BottomBar(selectedTab: .constant("Home"))
+        .environment(\.locale, .init(identifier: "ru"))
 }

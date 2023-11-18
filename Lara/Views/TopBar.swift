@@ -32,4 +32,5 @@ struct TopBar: View {
 #Preview {
     let user = User(name: "James", imageName: "avatar")
     return TopBar(user: user)
+        .environment(\.locale, .init(identifier: "ru"))
 }
