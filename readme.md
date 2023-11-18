@@ -6,7 +6,7 @@ Couldn't test accessibility because vm has no sound.
 # Screenshots
 ![first screenshot](assets/first.png)
 ![second screenshot](assets/second.png)
-![third screenshot](assets/third.png)j
+![third screenshot](assets/third.png)
 ![fouth screenshot](assets/fourth.png)
 
 # How to start
