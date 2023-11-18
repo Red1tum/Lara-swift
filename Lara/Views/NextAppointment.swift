@@ -75,6 +75,8 @@ struct NextAppointment: View {
             .background(Colors.blue)
             .cornerRadius(Sizes.cornerRadius)
         }
+        .accessibilityLabel("Your next appointment, button")
+        .accessibilityValue("Your next appointment with doctor \(info.doctorPosition), \(info.doctorPosition) scheduled for \(info.date), \(info.time). Tap to get more information.")
     }
 }
 

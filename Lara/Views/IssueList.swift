@@ -22,6 +22,7 @@ struct IssueView: View {
                 .poppinsRegular(size: 15)
                 .foregroundColor(Colors.blackishGray)
         }
+        .accessibilityLabel("Issue - \(issue.issue), button")
     }
 }
 
@@ -35,6 +36,7 @@ struct IssueList: View {
         }
         .padding(0)
         .frame(width: Sizes.elementWidth)
+        .accessibilityLabel("List of issues")
     }
 }
 

@@ -74,6 +74,8 @@ struct NearDoctorCard: View {
             .cornerRadius(Sizes.cornerRadius)
             .shadow(color: Colors.shadow, radius: 10, x: 2, y: 12)
         }
+        .accessibilityLabel("Near doctor \(nearDoctor.name), \(nearDoctor.position), button")
+        .accessibilityValue("Doctor \(nearDoctor.name), \(nearDoctor.position) is at distance \(nearDoctor.distanceToPatient) KM from you. Doctor's rating is \(nearDoctor.rating) with \(nearDoctor.qtyOfReviews). Doctor will be open at \(nearDoctor.openAt). Tap to get more information about him.")
     }
 }
 
@@ -93,6 +95,7 @@ struct NearDoctorList: View {
         }
         .padding(0)
         .frame(maxWidth: .infinity, alignment: .center)
+        .accessibilityLabel("Near doctors list")
     }
 }
 

@@ -37,7 +37,6 @@ struct ContentView: View {
     ContentView()
 }
 
-
 #Preview {
     ContentView()
         .environment(\.locale, .init(identifier: "ru"))
