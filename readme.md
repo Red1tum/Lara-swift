@@ -11,6 +11,7 @@ Couldn't test accessibility because vm has no sound.
 
 # How to start
 ~~1. Buy MacBook~~
-1. Clone this repository(from XCode or command line
+
+1. Clone this repository(from XCode or command line)
 
 And you are ready to go!
