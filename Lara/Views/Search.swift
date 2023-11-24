@@ -19,7 +19,7 @@ struct Search: View {
                 .foregroundColor(Colors.blackishGray)
         }
         .padding(16)
-        .frame(width: Sizes.elementWidth, alignment: .leading)
+        .frame(alignment: .leading)
         .background(Colors.darkPasterBlue)
         .cornerRadius(12)
     }

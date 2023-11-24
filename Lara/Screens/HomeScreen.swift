@@ -32,8 +32,10 @@ struct HomeScreen: View {
                 Search()
                 IssueList(issues: issueList)
                 NearDoctorList(nearDoctors: doctors)
+                Spacer().frame(height: 50)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .padding([.leading, .trailing], 24)
         }
     }
 }

@@ -35,7 +35,6 @@ struct IssueList: View {
             }
         }
         .padding(0)
-        .frame(width: Sizes.elementWidth)
         .accessibilityLabel("List of issues")
     }
 }

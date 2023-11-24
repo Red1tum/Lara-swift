@@ -47,7 +47,7 @@ struct NextAppointment: View {
                 }
                 Divider()
                     .background(Colors.primary)
-                HStack(alignment: .top, spacing: 30) {
+                HStack(alignment: .top) {
                     Label {
                         Text(info.date)
                             .poppinsRegular(size: 12)
@@ -57,6 +57,7 @@ struct NextAppointment: View {
                             .resizable()
                             .smallIconFrame()
                     }
+                    Spacer()
                     Label {
                         Text(info.time)
                             .poppinsRegular(size: 12)
@@ -66,12 +67,13 @@ struct NextAppointment: View {
                             .resizable()
                             .smallIconFrame()
                     }
+                    .padding(.trailing, 12)
                 }
                 .padding(0)
-                .frame(maxWidth: .infinity, alignment: .topLeading)
+               // .frame(maxWidth: .infinity, alignment: .topLeading)
             }
             .padding(20)
-            .frame(width: Sizes.elementWidth, alignment: .top)
+            .frame(alignment: .top)
             .background(Colors.blue)
             .cornerRadius(Sizes.cornerRadius)
         }

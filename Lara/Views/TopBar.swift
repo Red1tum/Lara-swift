@@ -25,7 +25,7 @@ struct TopBar: View {
             Image(user.imageName)
         }
         .padding(0)
-        .frame(width: Sizes.elementWidth, alignment: .center)
+        .frame(alignment: .center)
     }
 }
 

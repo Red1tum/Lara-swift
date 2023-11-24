@@ -39,7 +39,7 @@ struct NearDoctorCard: View {
                         .poppinsRegular(size: 14)
                         .foregroundColor(Colors.blackishGray)
                 }
-                .frame(width: Sizes.nearDoctorWidth, alignment: .center)
+                .frame(alignment: .leading)
                 .padding(0)
                 Divider()
                 HStack(alignment: .top, spacing: 24) {
@@ -53,6 +53,7 @@ struct NearDoctorCard: View {
                             .mediumIconFrame()
                     }
                     .foregroundColor(Colors.yellow)
+                    Spacer()
                     Label {
                         Text("Open at \(nearDoctor.openAt)")
                             .poppinsRegular(size: 12)
@@ -62,13 +63,14 @@ struct NearDoctorCard: View {
                             .renderingMode(.template)
                             .mediumIconFrame()
                     }
+                    .padding(.trailing, 24)
                     .foregroundColor(Colors.blue)
                 }
                 .padding(0)
-                .frame(width: Sizes.nearDoctorWidth, alignment: .topLeading)
+                .frame(alignment: .topLeading)
             }
             .frame(width: Sizes.elementWidth, alignment: .top)
-            .padding(.horizontal, 16)
+//            .padding(.horizontal, 16)
             .padding(.vertical, 20)
             .background(Colors.primary)
             .cornerRadius(Sizes.cornerRadius)
@@ -88,7 +90,6 @@ struct NearDoctorList: View {
                 .poppinsRegular(size: 16)
                 .fontWeight(.semibold)
                 .foregroundColor(Colors.midnight)
-                .padding(.horizontal, 16)
             ForEach(nearDoctors) {nearDoctor in
                 NearDoctorCard(nearDoctor: nearDoctor)
             }
