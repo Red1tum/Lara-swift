@@ -42,6 +42,7 @@ struct NearDoctorCard: View {
                 .frame(alignment: .leading)
                 .padding(0)
                 Divider()
+                    .padding([.leading, .trailing], 16)
                 HStack(alignment: .top, spacing: 24) {
                     Label {
                         Text("\(String(format: "%.1f", nearDoctor.rating)) (\(nearDoctor.qtyOfReviews) reviews)")
@@ -69,8 +70,6 @@ struct NearDoctorCard: View {
                 .padding(0)
                 .frame(alignment: .topLeading)
             }
-            .frame(width: Sizes.elementWidth, alignment: .top)
-//            .padding(.horizontal, 16)
             .padding(.vertical, 20)
             .background(Colors.primary)
             .cornerRadius(Sizes.cornerRadius)

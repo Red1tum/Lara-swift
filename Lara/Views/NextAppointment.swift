@@ -46,7 +46,9 @@ struct NextAppointment: View {
                     }
                 }
                 Divider()
+                    .padding([.leading, .trailing], 16)
                     .background(Colors.primary)
+
                 HStack(alignment: .top) {
                     Label {
                         Text(info.date)
